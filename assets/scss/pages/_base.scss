@@ -1,0 +1,25 @@
+$bg-primary : #AA0601;
+$bg-secondary : #5F3E2D;
+$bg-third : #B75929;
+$white : #ffffff;
+$black : #000000;
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.container{
+  max-width: 1296px;
+  margin: 0 auto;
+}
