@@ -1,0 +1,86 @@
+// display
+.d{
+  &-block{
+    display: block;
+  }
+  &-flex{
+    display: flex;
+  }
+  &-none{
+    display: none;
+  }
+  &-md-block{
+    // Tablet以上block
+    @include Tablet{
+      display: block;
+    }
+  }
+  &-md-flex{
+    @include Tablet{
+      display: flex;
+    }
+  }
+  &-md-none{
+    // Tablet以上none
+    @include Tablet{
+      display: none;
+    }
+  }
+}
+
+// flex
+.justify-content{
+  &-between{
+    justify-content: space-between;
+  }
+  &-end{
+    justify-content: flex-end;
+  }
+  &-md-between{
+    @include Tablet{
+      justify-content:space-between;
+    }
+  }
+}
+.align-items{
+  &-start{
+    align-items: flex-start;
+  }
+  &-center{
+    align-items: center;
+  }
+  &-end{
+    align-items: flex-end;
+  }
+  &-md-start{
+    @include Tablet{
+      align-items: flex-start;
+    }
+  }
+  &-md-center{
+    @include Tablet{
+      align-items: center;
+    }
+  }
+  &-md-end{
+    @include Tablet{
+      align-items: flex-end;
+    }
+  }
+}
+
+.container{
+  width: 100%;
+  max-width: 345px;
+  margin: 0 auto;
+  //! media query 的範圍是大包小，大範圍寫前面
+  // in tablet device, max-width of container is 696px
+  @include Tablet{
+    max-width:696px;
+  }
+  // in Tablet device, max-width of container is 345px
+  @include Desktop{
+    max-width:1296px;
+  }
+}
+  

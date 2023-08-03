@@ -1,0 +1,30 @@
+//! 和ejs內的layout差別在於，該ejs scss的設定就是專屬於該layout的。但是當這個ejs內裡面又要放一個常常會用到的layout，這時就必須用這裡的layout做設定。 
+
+
+// list
+.list{
+  flex-wrap: wrap;
+  color: $white;
+  &-item{
+    width: 50%;
+    padding: 12px 0;
+    text-align: center;
+    border: 1px solid $white;
+    
+  }
+  @include Tablet{
+    flex-wrap: nowrap;
+    li:not(:last-child){
+      margin-right: 64px;
+    }
+    &-item{
+      text-align: right;
+      border: none;
+      padding: 0;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      width: auto;
+      font-size: 20px;
+    }
+  }
+}

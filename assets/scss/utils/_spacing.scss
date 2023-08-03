@@ -1,0 +1,92 @@
+// margin
+.me{
+  &-8{
+    margin-right: 8px;
+  }
+  &-20{
+    margin-right: 20px;
+  }
+  &-22{
+    margin-right: 22px;
+  }
+  &-32{
+    margin-right: 32px;
+  }
+  &-48{
+    margin-right: 48px;
+  }
+}
+.mt{
+  &-16{
+    margin-top: 16px;
+  }
+  &-48{
+    margin-top: 48px;
+  }
+  &-80{
+    margin-top: 80px;
+  }
+}
+.mb{
+  &-8{
+    margin-bottom: 8px;
+  }
+  &-24{
+    margin-bottom: 24px;
+  }
+  &-32{
+    margin-bottom: 32px;
+  }
+  &-40{
+    margin-bottom: 8px;
+  }
+  &-80{
+    margin-bottom: 80px;
+  }
+}
+.my{
+  &-16{
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  &-25{
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  &-32{
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  &-40{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+// padding
+.px{
+  &-12{
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  &-16{
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.py{
+  &-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  &-12{
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  &-24{
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  
+}
