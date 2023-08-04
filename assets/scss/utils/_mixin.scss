@@ -1,6 +1,6 @@
 // 製作各裝置的media query
 @mixin Tablet{
-  @media (min-width:696px) {
+  @media (min-width:768px) {
     @content;
   }
 }

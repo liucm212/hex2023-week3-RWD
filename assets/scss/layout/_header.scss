@@ -1,7 +1,8 @@
 .header{
   &-logo{
     width: 80px;
-    padding: 16px 0 ;
+    box-sizing: content-box;
+    padding: 16px 0;
     @include Tablet{
       padding: 0;
     }
