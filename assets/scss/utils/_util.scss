@@ -9,26 +9,48 @@
   &-none{
     display: none;
   }
-  &-md-block{
-    // Tablet以上block
+  &-md{
     @include Tablet{
-      display: block;
+      &-block{
+        display: block;
+      }
+      &-flex{
+        display: flex;
+      }
+      &-none{
+        display: none;
+      }
     }
   }
-  &-md-flex{
-    @include Tablet{
-      display: flex;
-    }
-  }
-  &-md-none{
-    // Tablet以上none
-    @include Tablet{
-      display: none;
+  &-lg{
+    @include Desktop{
+      &-block{
+        display: block;
+      }
+      &-flex{
+        display: flex;
+      }
+      &-none{
+        display: none;
+      }
     }
   }
 }
 
 // flex
+.flex{
+  &-column{
+    flex-direction: column;
+  }
+  &-md{
+    @include Tablet{
+      &-column{
+        flex-direction: column;
+      }
+    }
+  }
+  
+}
 .justify-content{
   &-between{
     justify-content: space-between;
@@ -65,6 +87,15 @@
   &-md-end{
     @include Tablet{
       align-items: flex-end;
+    }
+  }
+}
+.align-self{
+  &-md{
+    @include Tablet{
+      &-stretch{
+        align-self: stretch;
+      }
     }
   }
 }
@@ -158,6 +189,15 @@
   &-100{
     width: 100%;
   }
+  &-5-12{
+    width: 41.666%;
+  }
+  &-7-12{
+    width: 58.333%;
+  }
+  &-8-12{
+    width: 66.666%;
+  }
   @include Tablet{
     &-md{
       &-auto{
@@ -183,6 +223,15 @@
       }
       &-100{
         width: 100%;
+      }
+      &-5-12{
+      width: 41.666%;
+      }
+      &-7-12{
+        width: 58.333%;
+      }
+      &-8-12{
+        width: 66.666%;
       }
     }
   }
@@ -211,6 +260,15 @@
       }
       &-100{
         width: 100%;
+      }
+      &-5-12{
+        width: 41.666%;
+      }
+      &-7-12{
+        width: 58.333%;
+      }
+      &-8-12{
+        width: 66.666%;
       }
     }
   }
